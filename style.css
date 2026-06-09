@@ -1,0 +1,288 @@
+/* RESET DE ESTILOS & CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f9f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* LINKS GERAIS */
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* MENU DE NAVEGAÇÃO */
+header {
+    background-color: #2d6a4f;
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+header td {
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #52b788;
+}
+
+/* SEÇÕES GERAIS */
+section {
+    padding: 60px 10%;
+}
+
+/* BANNER PRINCIPAL (HERO) */
+#inicio {
+    background-color: #e9f5ed;
+    text-align: center;
+    padding: 100px 5%;
+}
+
+#inicio h1 {
+    font-size: 2.5rem;
+    color: #1b4332;
+    margin-bottom: 20px;
+}
+
+#inicio p {
+    font-size: 1.2rem;
+    color: #40916c;
+    margin-bottom: 30px;
+}
+
+#inicio button {
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#inicio button:hover {
+    background-color: #1b4332;
+}
+
+/* SEÇÃO 1: PRODUÇÃO AGRÍCOLA */
+#producao table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#producao h2 {
+    text-align: center;
+    color: #1b4332;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+#producao .card-pib {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#producao .card-pib h3 {
+    color: #2d6a4f;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* SEÇÃO 2: SUSTENTABILIDADE & TECNOLOGIA */
+#sustentabilidade h2 {
+    text-align: center;
+    color: #1b4332;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+#sustentabilidade table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+#sustentabilidade .card-tech {
+    background-color: #e9f5ed;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#sustentabilidade .card-tech h3 {
+    color: #2d6a4f;
+    margin-bottom: 15px;
+}
+
+/* SEÇÃO 3: DESAFIOS AMBIENTAIS */
+#desafios {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+#desafios h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+#desafios table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+#desafios .card-desafio {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+#desafios .card-desafio h4 {
+    color: #b7094c;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#desafios .card-desafio p {
+    color: #ddd;
+}
+
+/* SEÇÃO 4: O FUTURO REGENERATIVO */
+#futuro {
+    text-align: center;
+    background-color: white;
+}
+
+#futuro h2 {
+    color: #1b4332;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#futuro p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* SEÇÃO 5: CONTATO */
+#contato h2 {
+    text-align: center;
+    color: #1b4332;
+    margin-bottom: 30px;
+}
+
+#contato form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contato label {
+    font-weight: bold;
+    color: #2d6a4f;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contato input[type="text"],
+#contato input[type="email"],
+#contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#contato input[type="submit"] {
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+#contato input[type="submit"]:hover {
+    background-color: #1b4332;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #1b4332;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVIDADE (ADAPTAÇÃO PARA CELULARES) */
+@media (max-width: 768px) {
+    header tr, #producao tr, #sustentabilidade tr, #desafios tr {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    header td {
+        text-align: center !important;
+        padding: 5px 0;
+    }
+    
+    .nav-links a {
+        margin: 0 10px;
+        display: inline-block;
+    }
+    
+    #producao td, #sustentabilidade td {
+        width: 100% !important;
+        margin-bottom: 15px;
+    }
+    
+    #sustentabilidade table {
+        border-spacing: 0;
+    }
+    
+    section {
+        padding: 40px 5%;
+    }
+}
