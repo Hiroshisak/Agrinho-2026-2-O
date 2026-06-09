@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AgroSustentável</title>
+    <!-- Vinculando o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- MENU DE NAVEGAÇÃO -->
     <header>
-        <table width="100%" bgcolor="#2d6a4f" cellpadding="15">
+        <table>
             <tr>
-                <td>
-                    <font color="white" size="5"><b>🌾 AgroSustentável</b></font>
-                </td>
-                <td align="right">
-                    <a href="#inicio"><font color="white">Início</font></a> &nbsp;&nbsp;
-                    <a href="#producao"><font color="white">Produção</font></a> &nbsp;&nbsp;
-                    <a href="#sustentabilidade"><font color="white">Práticas</font></a> &nbsp;&nbsp;
-                    <a href="#desafios"><font color="white">Desafios</font></a> &nbsp;&nbsp;
-                    <a href="#contato"><font color="white">Contato</font></a>
+                <td class="logo">🌾 AgroSustentável</td>
+                <td align="right" class="nav-links">
+                    <a href="#inicio">Início</a>
+                    <a href="#producao">Produção</a>
+                    <a href="#sustentabilidade">Práticas</a>
+                    <a href="#desafios">Desafios</a>
+                    <a href="#contato">Contato</a>
                 </td>
             </tr>
         </table>
@@ -27,35 +27,24 @@
 
     <!-- BANNER PRINCIPAL (HERO) -->
     <section id="inicio">
-        <table width="100%" bgcolor="#f4f9f4" cellpadding="80">
-            <tr>
-                <td align="center">
-                    <h1>AGRO FORTE, FUTURO SUSTENTÁVEL</h1>
-                    <p>A tecnologia impulsionando o campo em harmonia com o meio ambiente.</p>
-                    <br>
-                    <a href="#producao">
-                        <button>Conheça o Projeto</button>
-                    </a>
-                </td>
-            </tr>
-        </table>
+        <h1>AGRO FORTE, FUTURO SUSTENTÁVEL</h1>
+        <p>A tecnologia impulsionando o campo em harmonia com o meio ambiente.</p>
+        <a href="#producao">
+            <button>Conheça o Projeto</button>
+        </a>
     </section>
 
     <!-- SEÇÃO 1: PRODUÇÃO AGRÍCOLA -->
     <section id="producao">
-        <table width="80%" align="center" cellpadding="40">
-            <tr>
-                <td colspan="2" align="center">
-                    <h2>Produção Agrícola & Economia</h2>
-                </td>
-            </tr>
+        <h2>Produção Agrícola & Economia</h2>
+        <table>
             <tr>
                 <td width="50%" valign="top">
                     <h3>O Motor do PIB Nacional</h3>
                     <p>O agronegócio é fundamental para o crescimento econômico, garantindo a segurança alimentar global, gerando milhões de empregos diretos e mantendo o equilíbrio da balança comercial através das exportações de grãos e proteínas.</p>
                 </td>
-                <td width="50%" bgcolor="#ffffff" align="center" style="border: 1px solid #ccc;">
-                    <h3 style="color: #2d6a4f;">+20%</h3>
+                <td width="50%" class="card-pib">
+                    <h3>+20%</h3>
                     <p>De participação estimada no PIB nacional</p>
                 </td>
             </tr>
@@ -64,22 +53,18 @@
 
     <!-- SEÇÃO 2: SUSTENTABILIDADE & TECNOLOGIA -->
     <section id="sustentabilidade">
-        <table width="80%" align="center" cellpadding="20" bgcolor="#ffffff">
+        <h2>Sustentabilidade & Tecnologia</h2>
+        <table>
             <tr>
-                <td colspan="3" align="center">
-                    <h2>Sustentabilidade & Tecnologia</h2>
-                </td>
-            </tr>
-            <tr>
-                <td align="center" bgcolor="#f4f9f4" width="33%">
+                <td class="card-tech">
                     <h3>🛸 Drones Agrícolas</h3>
                     <p>Mapeiam lavouras em minutos, identificando pragas ou falhas nutricionais rapidamente.</p>
                 </td>
-                <td align="center" bgcolor="#f4f9f4" width="33%">
+                <td class="card-tech">
                     <h3>💧 Irrigação Smart</h3>
                     <p>Sistemas automatizados que distribuem água com base na umidade real do solo.</p>
                 </td>
-                <td align="center" bgcolor="#f4f9f4" width="33%">
+                <td class="card-tech">
                     <h3>☀️ Energia Renovável</h3>
                     <p>Uso de painéis fotovoltaicos e biomassa para gerar eletricidade limpa no campo.</p>
                 </td>
@@ -89,28 +74,24 @@
 
     <!-- SEÇÃO 3: DESAFIOS AMBIENTAIS -->
     <section id="desafios">
-        <table width="80%" align="center" cellpadding="30" bgcolor="#1a1a1a">
+        <h2>Desafios Ambientais</h2>
+        <table>
             <tr>
-                <td align="center">
-                    <h2><font color="white">Desafios Ambientais</font></h2>
+                <td class="card-desafio">
+                    <h4>⚠️ Combate ao Desmatamento</h4>
+                    <p>O grande objetivo atual é zerar o desmatamento ilegal usando rastreamento por satélite.</p>
                 </td>
             </tr>
             <tr>
-                <td bgcolor="#2a2a2a">
-                    <h4><font color="#b7094c">⚠️ Combate ao Desmatamento</font></h4>
-                    <p><font color="#ddd">O grande objetivo atual é zerar o desmatamento ilegal usando rastreamento por satélite.</font></p>
+                <td class="card-desafio">
+                    <h4>⚠️ Pegada Hídrica</h4>
+                    <p>Otimizar o uso da água e proteger mananciais e nascentes dentro das propriedades.</p>
                 </td>
             </tr>
             <tr>
-                <td bgcolor="#2a2a2a">
-                    <h4><font color="#b7094c">⚠️ Pegada Hídrica</font></h4>
-                    <p><font color="#ddd">Otimizar o uso da água e proteger mananciais e nascentes dentro das propriedades.</font></p>
-                </td>
-            </tr>
-            <tr>
-                <td bgcolor="#2a2a2a">
-                    <h4><font color="#b7094c">⚠️ Emissões de Carbono</font></h4>
-                    <p><font color="#ddd">Mitigar gases do efeito estufa na pecuária através do manejo correto de pastagens.</font></p>
+                <td class="card-desafio">
+                    <h4>⚠️ Emissões de Carbono</h4>
+                    <p>Mitigar gases do efeito estufa na pecuária através do manejo correto de pastagens.</p>
                 </td>
             </tr>
         </table>
@@ -118,52 +99,30 @@
 
     <!-- SEÇÃO 4: O FUTURO REGENERATIVO -->
     <section id="futuro">
-        <table width="80%" align="center" cellpadding="40">
-            <tr>
-                <td align="center">
-                    <h2>O Futuro Regenerativo</h2>
-                    <p>A agricultura regenerativa reconecta a produção com os ciclos naturais, recuperando o solo e capturando carbono da atmosfera. Essa abordagem garante a produtividade para as próximas gerações.</p>
-                </td>
-            </tr>
-        </table>
+        <h2>O Futuro Regenerativo</h2>
+        <p>A agricultura regenerativa reconecta a produção com os ciclos naturais, recuperando o solo e capturando carbono da atmosfera. Essa abordagem garante a produtividade para as próximas gerações.</p>
     </section>
 
     <!-- SEÇÃO 5: CONTATO & CONSCIENTIZAÇÃO -->
     <section id="contato">
-        <table width="50%" align="center" cellpadding="20">
-            <tr>
-                <td align="center">
-                    <h2>Contato</h2>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <form>
-                        <label>Nome:</label><br>
-                        <input type="text" name="nome" required style="width: 100%;"><br><br>
-                        
-                        <label>E-mail:</label><br>
-                        <input type="email" name="email" required style="width: 100%;"><br><br>
-                        
-                        <label>Mensagem:</label><br>
-                        <textarea name="mensagem" rows="5" required style="width: 100%;"></textarea><br><br>
-                        
-                        <input type="submit" value="Enviar Mensagem">
-                    </form>
-                </td>
-            </tr>
-        </table>
+        <h2>Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            
+            <input type="submit" value="Enviar Mensagem">
+        </form>
     </section>
 
     <!-- RODAPÉ -->
     <footer>
-        <table width="100%" bgcolor="#1b4332" cellpadding="20">
-            <tr>
-                <td align="center">
-                    <font color="white">© 2026 AgroSustentável. Todos os direitos reservados.</font>
-                </td>
-            </tr>
-        </table>
+        <p>© 2026 AgroSustentável. Todos os direitos reservados.</p>
     </footer>
 
 </body>
