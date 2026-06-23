@@ -76,4 +76,21 @@ document.addEventListener("DOMContentLoaded", function () {
             this.style.boxShadow = "none";
         });
     });
+
+    // ==========================================
+    // 4. EFEITO VISUAL NA IMAGEM LATERAL
+    // ==========================================
+    const imgLateral = document.querySelector(".img-lateral");
+    
+    if (imgLateral) {
+        imgLateral.addEventListener("mouseenter", function () {
+            this.style.transform = "scale(1.05)";
+            this.style.boxShadow = "0 8px 20px rgba(0,0,0,0.15)";
+        });
+        
+        imgLateral.addEventListener("mouseleave", function () {
+            this.style.transform = "scale(1)";
+            this.style.boxShadow = "0 4px 10px rgba(0,0,0,0.05)";
+        });
+    }
 });
