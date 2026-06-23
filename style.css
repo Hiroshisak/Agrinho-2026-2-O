@@ -60,7 +60,7 @@ section {
 #inicio {
     background-color: #e9f5ed;
     text-align: center;
-    padding: 100px 5%;
+    padding: 80px 5%;
 }
 
 #inicio h1 {
@@ -89,6 +89,31 @@ section {
 
 #inicio button:hover {
     background-color: #1b4332;
+}
+
+/* ESTILIZAÇÃO DAS IMAGENS INTEGRADAS */
+.banner-container {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.img-fluida {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img-lateral {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
 }
 
 /* SEÇÃO 1: PRODUÇÃO AGRÍCOLA */
@@ -180,19 +205,24 @@ section {
 
 /* SEÇÃO 4: O FUTURO REGENERATIVO */
 #futuro {
-    text-align: center;
     background-color: white;
 }
 
+#futuro table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
 #futuro h2 {
+    text-align: center;
     color: #1b4332;
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #futuro p {
-    max-width: 800px;
-    margin: 0 auto;
+    padding-right: 20px;
+    text-align: left;
 }
 
 /* SEÇÃO 5: CONTATO */
@@ -257,7 +287,7 @@ footer {
 
 /* RESPONSIVIDADE (ADAPTAÇÃO PARA CELULARES) */
 @media (max-width: 768px) {
-    header tr, #producao tr, #sustentabilidade tr, #desafios tr {
+    header tr, #producao tr, #sustentabilidade tr, #desafios tr, #futuro tr {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -273,9 +303,18 @@ footer {
         display: inline-block;
     }
     
-    #producao td, #sustentabilidade td {
+    #producao td, #sustentabilidade td, #futuro td {
         width: 100% !important;
         margin-bottom: 15px;
+    }
+    
+    #futuro p {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .img-lateral {
+        margin: 15px auto 0 auto;
     }
     
     #sustentabilidade table {
